@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+li, a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: whitesmoke;
+    border-left: 130px white solid;
+    border-right: 80px white solid;
+}
+
+.logo {
+    cursor: pointer;
+    width: 175px;
+    height: 75px;
+    position: relative;
+    right: 100px;
+}
+
+.nav__links {
+    list-style: none;
+    position: relative;
+    right: 50px;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #019cc3;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(5, 175, 217);
+}
+
+/*Header*/
+/*Main*/
+
+.img-down-nav img{
+    width: 1200px;
+    height: 450px;
+    position: relative;
+    left: 155px;
+}
+
+.mesectitle {
+    width: 1200px;
+    height: 100px;
+    position: relative;
+    left: 155px;
+    border-bottom: 5px white solid;
+    background-color: whitesmoke;
+}
+
+.mesectitle h1 {
+    float: left;
+    font-size: 70px;
+    position: relative;
+    left: 500px;
+}
+
+/*News Section */
+
+.news-container {
+    display: inline-flex;
+    width: 1200px;
+    position: relative;
+    left: 155px;
+    height: 250px;
+    background-color: rgb(245, 242, 242);
+}
+
+.ogledni-casovi {
+    display: flexbox;
+    border: 2px whitesmoke;
+    width: 600px;
+    height: 240px;
+    position: relative;
+    border-right: 5px white solid;
+    
+    
+}
+
+.ogledni-casovi h1 {
+    position: relative;
+    left: 150px;
+}
+    
+
+.ogledni-casovi p {
+    font-weight: 100;
+    width: 400px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+
+#paragraf2 {
+    position: relative;
+    top: 50px;
+}
+
+.ogledni-casovi-img {
+    width: 160px;
+    height: 140px;
+    float: right;
+    position: relative;
+    bottom: 80px;
+    right: 10px;
+}
+
+.ogledni-casovi button {
+    position: relative;
+    top: 58px;
+    left: 175px;
+}
+
+
+
+.takmicenje2023 h1 {
+    position: relative; 
+    left: 60px;
+}
+
+.takmicenje2023 .inline {
+    display: inline-block;
+}
+
+.takmicenje2023 .inline p {
+    position: relative;
+    left: 20px;
+    width: 350px;
+    margin-top: 20px;
+    top: 10px;
+}
+
+.takmicenje2023 .inline img {
+    width: 200px;
+    height: 170px;
+    position: relative;
+    left: 370px;
+    bottom: 40px;
+}
+
+.takmicenje2023 p {
+    position: relative;
+    bottom: 163px;
+}
+
+.takmicenje2023 ul {
+    position: relative;
+    bottom: 160px;
+    left: 25px;
+}
+
+.takmicenje2023 button {
+    position: relative;
+    bottom: 170px;
+    left: 170px;
+}
+
+/*Main 2023*/
+
+.main2023 {
+    display: flexbox;
+    width: 1200px;
+    position: relative;
+    left: 155px;
+    top: 20px;
+    background-color: whitesmoke;
+}
+
+/*Raspored Pismenih*/
+.raspored-pismenih2023 {
+    background-color: whitesmoke;
+    display: inline-flex;
+    width: 1200px;
+    position: relative;;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    bottom: 10px;
+    border-bottom: 10px white solid;
+
+}
+
+.raspored-pismenih2023 h1 {
+    position: relative;
+    bottom: 25px;
+}
+
+.button1 {
+    margin-right: 50px;
+    position: relative;
+    bottom: 20px;
+}
+
+/*Main 2023 Smerove*/
+
+.main2023-smerove {
+    display: flexbox;
+    position: relative;
+    height: 750px;
+}
+
+.main2023-smerove h1 {
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+.main2023-smerove ul {
+    position: relative;
+    top: 50px;
+}
+
+.main2023-smerove ul li {
+    padding-bottom: 100px;
+    padding-left: 10px;    
+}
+
+.main2023-smerove img {
+    width: 475px;
+    height: 600px;
+    position: relative;
+    left: 670px;
+    bottom: 500px;
+    font-weight: 150;
+    
+}
+
+.main2023-smerove p {
+    padding-left: 10px;
+}
+
+
+
+
+footer {
+    background-color: rgb(43, 42, 42);
+    width: 100%;
+    height: 150px;
+    position: relative;
+    top: 430px;
+}

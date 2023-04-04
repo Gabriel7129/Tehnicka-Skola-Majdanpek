@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+li, a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #ffffff;
+    border-left: 130px white solid;
+    border-right: 80px white solid;
+}
+
+.logo {
+    cursor: pointer;
+    width: 175px;
+    height: 75px;
+    position: relative;
+    right: 100px;
+}
+
+.nav__links {
+    list-style: none;
+    position: relative;
+    right: 50px;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #019cc3;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(5, 175, 217);
+}
+
+/*Header*/
+
+body {
+    background-color: white;
+    display: flexbox;
+}
+
+.heading {
+    background-color: whitesmoke;
+    display: flexbox;
+    height: 100px;
+    width: 1200px;
+    position: relative;
+    left: 155px;
+}
+
+.heading h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    color: #000000;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    left: 60px;
+    width: 1200px;
+    
+}
+
+main {
+    display: flexbox;
+    background-color: #000000;
+    width: 1200px;
+    position: relative;
+    left: 155px;
+    height: 1000px;
+    top: 100px;
+}
+
+/*Table*/
+
+table {
+    background-color: whitesmoke;
+    position: relative;
+    width: 1200px;
+    border: 3px black solid;
+}
+
+thead {
+    background-color: azure;
+}
+
+tr, td, th {
+    border: 1px black solid;
+}
+
+.class {
+    font-weight: bold;
+}
