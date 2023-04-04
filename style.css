@@ -107,95 +107,93 @@ button:hover {
     background-color: rgb(245, 242, 242);
 }
 
-.ogledni-casovi {
-    display: flexbox;
-    border: 2px whitesmoke;
+.sportovi {
+    width: 1200px;
+    position: relative;
+    left: 155px;
+    height: 500px;
+    background-color: whitesmoke;
+}
+.sportovititle {
+    height: 70px;
+    position: relative;
+    left: 375px;
+    font-size: 30px;
+}
+
+.mainsportovi {
+    height: 500px;
+}
+
+.prviartsport {
     width: 600px;
-    height: 240px;
-    position: relative;
-    border-right: 5px white solid;
-    
-    
+    height: 250px;
+    border-bottom: 3px white solid;
+    border-right: 3px white solid;
+    border-top: 3px white solid;
 }
 
-.ogledni-casovi h1 {
-    position: relative;
-    left: 150px;
-}
-    
-
-.ogledni-casovi p {
-    font-weight: 100;
-    width: 400px;
-    position: relative;
-    top: 30px;
-    left: 10px;
-}
-
-#paragraf2 {
-    position: relative;
-    top: 50px;
-}
-
-.ogledni-casovi-img {
-    width: 160px;
+.prviartsport img {
     height: 140px;
-    float: right;
+    width: 140px;
     position: relative;
-    bottom: 80px;
-    right: 10px;
+    left: 430px;
+    bottom: 60px;
 }
 
-.ogledni-casovi button {
+.prviartsport h1 {
     position: relative;
-    top: 58px;
     left: 175px;
 }
 
-
-
-.takmicenje2023 h1 {
-    position: relative; 
-    left: 60px;
-}
-
-.takmicenje2023 .inline {
-    display: inline-block;
-}
-
-.takmicenje2023 .inline p {
+.prviartsport p {
     position: relative;
-    left: 20px;
-    width: 350px;
-    margin-top: 20px;
-    top: 10px;
+    top: 30px;
+    font-size: 22px;
+    left: 5px;
 }
 
-.takmicenje2023 .inline img {
-    width: 200px;
-    height: 170px;
+.prviartsport button {
     position: relative;
-    left: 370px;
     bottom: 40px;
 }
 
-.takmicenje2023 p {
+.drugiartsport {
+    width: 600px;
+    height: 250px;
+    border-bottom: 3px white solid;
+    border-top: 3px white solid;
+    float: right;
     position: relative;
-    bottom: 163px;
+    bottom: 250px;
 }
 
-.takmicenje2023 ul {
+.drugiartsport h1 {
     position: relative;
-    bottom: 160px;
-    left: 25px;
-}
-
-.takmicenje2023 button {
-    position: relative;
-    bottom: 170px;
     left: 170px;
 }
 
+.drugiartsport img {
+    height: 140px;
+    width: 140px;
+    position: relative;
+    left: 20px;
+    top: 24px;
+}
+
+.drugiartsport p {
+    width: 400px;
+    float: right;
+    font-size: 22px;
+    position: relative;
+    top: 20px;
+}
+
+.drugiartsport button {
+    position: relative;
+    top: 20px;
+    left: 255px;
+}
 /*Main 2023*/
 
 .main2023 {
