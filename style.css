@@ -18,6 +18,10 @@ li, a, button {
     text-decoration: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /*Header*/
 
 header {
@@ -27,7 +31,7 @@ header {
     padding: 30px 10%;
     background-color: whitesmoke;
     border-left: 130px white solid;
-    border-right: 80px white solid;
+    border-right: 130px white solid;
 }
 
 .logo {
@@ -107,12 +111,49 @@ button:hover {
     background-color: rgb(245, 242, 242);
 }
 
+.danskole {
+    width: 600px;
+    height: 250px;
+    border: red 1px solid;
+}
+
+.danskole h1{
+    position: relative;
+    left: 200px;
+    margin-bottom: 10px;
+}
+
+.danskole img {
+    height: 140px;
+    width: 140px;
+    float: right;
+    position: relative;
+    right: 20px;
+    bottom: 100px;
+}
+
+.danskole p {
+    font-size: 22px;
+    width: 400px;
+    position: relative;
+    left: 10px;
+}
+
+.danskole button  {
+    position: relative;
+    left: 200px;
+    top: 20px;
+}
+
+/*Sportovi*/
+
 .sportovi {
     width: 1200px;
     position: relative;
     left: 155px;
     height: 500px;
     background-color: whitesmoke;
+    border-top: 10px white solid;
 }
 .sportovititle {
     height: 70px;
@@ -122,13 +163,25 @@ button:hover {
 }
 
 .mainsportovi {
-    height: 500px;
+    height: 600px;
+    background-color: whitesmoke;
+    width: 1200px;
 }
+
+/*First Row*/
+
+.firstrow {
+    display: flex;
+    height: 250px;
+    width: 1200px;
+}
+
+/*Prvi Artikl*/
 
 .prviartsport {
     width: 600px;
     height: 250px;
-    border-bottom: 3px white solid;
+    border-bottom: 6px white solid;
     border-right: 3px white solid;
     border-top: 3px white solid;
 }
@@ -158,14 +211,15 @@ button:hover {
     bottom: 40px;
 }
 
+/*Drugi Artikl*/
+
 .drugiartsport {
     width: 600px;
     height: 250px;
-    border-bottom: 3px white solid;
+    border-bottom: 6px white solid;
     border-top: 3px white solid;
     float: right;
     position: relative;
-    bottom: 250px;
 }
 
 .drugiartsport h1 {
@@ -194,6 +248,57 @@ button:hover {
     top: 20px;
     left: 255px;
 }
+
+/*Second Row*/
+
+.secondrow {
+    height: 250px;
+    width: 1200px;
+    display: flex;
+}
+
+/*Treci Artikl*/
+
+.treciartsport {
+    width: 600px;
+    height: 250px;
+    border-right: 3px white solid;
+}
+
+.treciartsport h1 {
+    position: relative;
+    left: 170px;
+}
+
+.treciartsport img {
+    height: 140px;
+    width: 140px;
+    position: relative;
+    left: 430px;
+    bottom: 90px;
+}
+
+.treciartsport p {
+    font-size: 22px;
+    width: 400px;
+    height: 100px;
+    margin-top: 20px;
+    position: relative;
+    left: 5px;
+}
+
+.treciartsport button {
+    position: relative;
+    bottom: 60px;
+}
+
+/*Cetvrti Artikl*/
+
+.cetvrtiartsport {
+    width: 600px;
+    height: 250px;
+}
+
 /*Main 2023*/
 
 .main2023 {
@@ -201,35 +306,12 @@ button:hover {
     width: 1200px;
     position: relative;
     left: 155px;
-    top: 20px;
+    top: 100px;
     background-color: whitesmoke;
 }
 
 /*Raspored Pismenih*/
-.raspored-pismenih2023 {
-    background-color: whitesmoke;
-    display: inline-flex;
-    width: 1200px;
-    position: relative;;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    justify-content: space-between;
-    bottom: 10px;
-    border-bottom: 10px white solid;
 
-}
-
-.raspored-pismenih2023 h1 {
-    position: relative;
-    bottom: 25px;
-}
-
-.button1 {
-    margin-right: 50px;
-    position: relative;
-    bottom: 20px;
-}
 
 /*Main 2023 Smerove*/
 
@@ -237,6 +319,7 @@ button:hover {
     display: flexbox;
     position: relative;
     height: 750px;
+    border-top: white 10px solid;
 }
 
 .main2023-smerove h1 {
@@ -268,9 +351,51 @@ button:hover {
     padding-left: 10px;
 }
 
+/*Dodatne Informacije*/
+
+.dodatneinfo {
+    width: 1200px;
+    height: 100px;
+    position: relative;
+    left: 155px;
+    top: 180px;
+}
+
+.dodatneinfo .h1info {
+    background-color: whitesmoke;
+    width: 1200px;
+    height: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60;
+}
+
+.dodatnemiddle {
+    width: 1200px;
+    border-top: 5px white solid;
+    height: 200px;
+    background-color: whitesmoke;
+}
+
+.rasporedpismenih {
+    margin-top: 20px;
+    display: flex;
+    width: 1200px;
+}
+
+.rasporedpismenih button {
+    position: relative;
+    left: 350px;
+}
+
+.rasporedpismenih h1 {
+    position: relative;
+    left: 10px;
+}
 
 
-
+/*Footer*/
 footer {
     background-color: rgb(43, 42, 42);
     width: 100%;
