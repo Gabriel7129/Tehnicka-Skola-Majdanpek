@@ -61,6 +61,12 @@ header {
     color: #019cc3;
 }
 
+.active a{
+    color:rgb(5, 175, 217) !important
+}
+
+
+
 button {
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
