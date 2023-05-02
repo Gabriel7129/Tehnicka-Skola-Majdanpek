@@ -45,8 +45,10 @@ header {
 .nav__links {
     list-style: none;
     position: relative;
-    right: 50px;
+    display: flex;
 }
+
+
 
 .nav__links li {
     display: inline-block;
@@ -60,6 +62,55 @@ header {
 .nav__links li a:hover{
     color: #019cc3;
 }
+
+.prvired {
+    height: 100%;
+}
+
+.active a{
+    color:rgb(5, 175, 217) !important
+}
+
+/*Droplist*/
+
+.nav__links li ul.dropdown li {
+    display: block;
+    width: 150px;
+    padding: 10px;
+}
+
+.nav__links li ul.dropdown {
+    border: 3px white solid;
+    background-color: whitesmoke;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.nav__links li:hover ul.dropdown {
+    display: block;
+}
+
+.dropdown1 {
+    display: none;
+}
+    
+.nav__links ul li:hover .dropdown1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: whitesmoke;
+}
+
+/*Kontakt Button*/
+
+.cta {
+    position: relative;
+    left: 100px;
+}
+
+/*Generalne Butone*/
 
 button {
     padding: 9px 25px;
@@ -114,7 +165,6 @@ button:hover {
 .danskole {
     width: 600px;
     height: 250px;
-    border: red 1px solid;
 }
 
 .danskole h1{
@@ -351,48 +401,6 @@ button:hover {
     padding-left: 10px;
 }
 
-/*Dodatne Informacije*/
-
-.dodatneinfo {
-    width: 1200px;
-    height: 100px;
-    position: relative;
-    left: 155px;
-    top: 180px;
-}
-
-.dodatneinfo .h1info {
-    background-color: whitesmoke;
-    width: 1200px;
-    height: 100px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 60;
-}
-
-.dodatnemiddle {
-    width: 1200px;
-    border-top: 5px white solid;
-    height: 200px;
-    background-color: whitesmoke;
-}
-
-.rasporedpismenih {
-    margin-top: 20px;
-    display: flex;
-    width: 1200px;
-}
-
-.rasporedpismenih button {
-    position: relative;
-    left: 350px;
-}
-
-.rasporedpismenih h1 {
-    position: relative;
-    left: 10px;
-}
 
 
 /*Footer*/
