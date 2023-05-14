@@ -46,6 +46,8 @@ header {
     list-style: none;
     position: relative;
     display: flex;
+    width: 800px;
+    right: 30px;
 }
 
 
@@ -103,11 +105,28 @@ header {
     background-color: whitesmoke;
 }
 
+
+.dropdown li{
+    border-top: 3px white solid;
+}
+
+.dropdown1 li {
+    border-top: 3px white solid;
+}
+
+.changesize ul.dropdown1 {
+    width: 160px;
+}
+
+.changesize2 ul.dropdown {
+    width: 160px;
+}
+
 /*Kontakt Button*/
 
 .cta {
     position: relative;
-    left: 100px;
+    right: 30px;
 }
 
 /*Generalne Butone*/
@@ -127,12 +146,75 @@ button:hover {
 
 /*Header*/
 /*Main*/
-
+/*
 .img-down-nav img{
     width: 1200px;
     height: 450px;
     position: relative;
     left: 155px;
+}
+*/
+
+.slideshow1 {
+    width: 1200px;
+}
+
+.slideshow2 {
+    width: 1200px;
+}
+
+.slideshow3 {
+    width: 1200px;
+}
+
+.containerslideshow {
+    width: 1200px;
+    height: 450px;
+    position: relative;
+    left: 155px;
+    overflow: hidden;
+}
+
+
+
+.wrapper {
+    animation: slide 16s infinite;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translate(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translate(-200%);        
+    }
+    75%{
+        transform: translate(-200%);
+    }
+    80%{
+        transform: translate(-300%);
+    }
+    100%{
+        transform: translate(-300%);
+    }
+}
+
+.containerslideshow .wrapper img {
+    width: 1200px !important;
+    height: 450px !important;
+
 }
 
 .mesectitle {
@@ -179,7 +261,7 @@ button:hover {
     float: right;
     position: relative;
     right: 20px;
-    bottom: 100px;
+    bottom: 120px;
 }
 
 .danskole p {
@@ -191,8 +273,44 @@ button:hover {
 
 .danskole button  {
     position: relative;
-    left: 200px;
+    left: 150px;
     top: 20px;
+}
+
+/*Radovi*/
+
+.masinciprvagodina {
+    width: 600px;
+    border-left: 3px white solid;
+}
+
+.masinciprvagodina h1 {
+    position: relative;
+    left: 200px;
+}
+
+.masinciprvagodina p {
+    font-size: 22px;
+    width: 400px;
+    position: relative;
+    left: 10px;
+    float: right;
+    margin-top: 20px;
+}
+
+.masinciprvagodina img {
+    height: 140px;
+    width: 140px;
+    float: left;
+    margin-top: 25px;
+    position: relative;
+    left: 20px;
+}
+
+.masinciprvagodina button {
+    position: relative;
+    left: 120px;
+    top: 35px;
 }
 
 /*Sportovi*/
@@ -208,7 +326,7 @@ button:hover {
 .sportovititle {
     height: 70px;
     position: relative;
-    left: 375px;
+    left: 300px;
     font-size: 30px;
 }
 
@@ -241,7 +359,7 @@ button:hover {
     width: 140px;
     position: relative;
     left: 430px;
-    bottom: 60px;
+    bottom: 43px;
 }
 
 .prviartsport h1 {
@@ -252,13 +370,13 @@ button:hover {
 .prviartsport p {
     position: relative;
     top: 30px;
-    font-size: 22px;
+    font-size: 18px;
     left: 5px;
 }
 
 .prviartsport button {
     position: relative;
-    bottom: 40px;
+    bottom: 35px;
 }
 
 /*Drugi Artikl*/
@@ -274,7 +392,7 @@ button:hover {
 
 .drugiartsport h1 {
     position: relative;
-    left: 170px;
+    left: 200px;
 }
 
 .drugiartsport img {
@@ -288,14 +406,14 @@ button:hover {
 .drugiartsport p {
     width: 400px;
     float: right;
-    font-size: 22px;
+    font-size: 18px;
     position: relative;
     top: 20px;
 }
 
 .drugiartsport button {
-    position: relative;
-    top: 20px;
+    position: absolute;
+    top: 190px;
     left: 255px;
 }
 
@@ -347,6 +465,34 @@ button:hover {
 .cetvrtiartsport {
     width: 600px;
     height: 250px;
+}
+
+.cetvrtiartsport h1 {
+    position: relative;
+    left: 170px;
+}
+
+.cetvrtiartsport img {
+height: 140px;
+    width: 140px;
+    position: relative;
+    left: 20px;
+    top: 24px;
+}
+
+
+.cetvrtiartsport p {
+    width: 400px;
+    float: right;
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+}
+
+.cetvrtiartsport button {
+    position: relative;
+    left: 255px;
+    top: 35px;
 }
 
 /*Main 2023*/

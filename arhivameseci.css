@@ -18,6 +18,10 @@ li, a, button {
     text-decoration: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /*Header*/
 
 header {
@@ -27,7 +31,7 @@ header {
     padding: 30px 10%;
     background-color: whitesmoke;
     border-left: 130px white solid;
-    border-right: 80px white solid;
+    border-right: 130px white solid;
 }
 
 .logo {
@@ -41,8 +45,10 @@ header {
 .nav__links {
     list-style: none;
     position: relative;
-    right: 50px;
+    display: flex;
 }
+
+
 
 .nav__links li {
     display: inline-block;
@@ -56,6 +62,55 @@ header {
 .nav__links li a:hover{
     color: #019cc3;
 }
+
+.prvired {
+    height: 100%;
+}
+
+.active a{
+    color:rgb(5, 175, 217) !important
+}
+
+/*Droplist*/
+
+.nav__links li ul.dropdown li {
+    display: block;
+    width: 150px;
+    padding: 10px;
+}
+
+.nav__links li ul.dropdown {
+    border: 3px white solid;
+    background-color: whitesmoke;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.nav__links li:hover ul.dropdown {
+    display: block;
+}
+
+.dropdown1 {
+    display: none;
+}
+    
+.nav__links ul li:hover .dropdown1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: whitesmoke;
+}
+
+/*Kontakt Button*/
+
+.cta {
+    position: relative;
+    left: 100px;
+}
+
+/*Generalne Butone*/
 
 button {
     padding: 9px 25px;
