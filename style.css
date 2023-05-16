@@ -551,9 +551,9 @@ height: 140px;
 
 /*Footer*/
 footer {
-    background-color: rgb(47, 47, 47);
+    background-color: black;
     width: 100%;
-    height: 300px;
+    height: 400px;
     position: relative;
     top: 430px;
 }
@@ -561,13 +561,91 @@ footer {
 .container-footer {
     width: 100%;
     height: 100%;
+    display: flex;
 }
 
+/*Smerove Footer Card*/
+
 .smerove-footer {
-    border: 3px red solid;
     width: 400px;
     height: 100%;
     z-index: 10;
 }
 
-.smerove-footer-title 
+.smerove-footer-title {
+    height: 30px;
+    position: relative;
+}
+
+.smerove-footer-title h4{
+    position: relative;
+    top: 5px;
+    left: 40px;
+    color: whitesmoke;
+    border-bottom: whitesmoke 6px solid;
+    border-radius: 15%;
+    width: 185px;
+}
+
+
+.smerove-footer-main-list {
+    margin-top: 50px;
+    position: relative;
+    left: 25px;
+    height: 100%;
+}
+
+.smerove-footer-main-list li {
+    margin: 15px;
+    color: white;
+    list-style-type: none;
+}
+
+.smerove-footer-main-list li a {
+    color: white;
+}
+
+.smerove-footer-main-list li a:hover {
+    color: #019cc3;
+    transition: all 0.3s ease 0s;
+}
+
+/*Kontakt Footer Card*/
+
+.kontakt-footer {
+    width: 400px;
+    height: 100%;
+    z-index: 10;
+    border: 1px red solid;
+    display: flexbox;
+    position: relative;
+    left: 665px;
+}
+
+.kontakt-footer-title {
+    height: 30px;
+    border: 1px green solid;
+}
+
+.kontakt-footer-title h4{
+    position: relative;
+    top: 5px;
+    left: 40px;
+    color: whitesmoke;
+    border-bottom: whitesmoke 6px solid;
+    border-radius: 15%;
+    width: 185px;
+}
+
+.kontakt-footer-main {
+
+}
+
+.kontakt-footer-main-text-align {
+    display: flex;
+}
+
+.kontakt-footer-main-text-align h5{
+    color: whitesmoke;
+    
+}
