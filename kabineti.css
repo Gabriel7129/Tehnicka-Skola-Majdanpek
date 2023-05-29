@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+li, a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: whitesmoke;
+    border-left: 130px white solid;
+    border-right: 130px white solid;
+}
+
+.logo {
+    cursor: pointer;
+    width: 175px;
+    height: 75px;
+    position: relative;
+    right: 100px;
+}
+
+.nav__links {
+    list-style: none;
+    position: relative;
+    display: flex;
+    width: 800px;
+    right: 30px;
+}
+
+
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #019cc3;
+}
+
+.prvired {
+    height: 100%;
+}
+
+.active a{
+    color:rgb(5, 175, 217) !important
+}
+
+/*Droplist*/
+
+.nav__links li ul.dropdown li {
+    display: block;
+    width: 150px;
+    padding: 10px;
+}
+
+.nav__links li ul.dropdown {
+    border: 3px white solid;
+    background-color: whitesmoke;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.nav__links li:hover ul.dropdown {
+    display: block;
+}
+
+.dropdown1 {
+    display: none;
+}
+    
+.nav__links ul li:hover .dropdown1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: whitesmoke;
+}
+
+
+.dropdown li{
+    border-top: 3px white solid;
+}
+
+.dropdown1 li {
+    border-top: 3px white solid;
+}
+
+.changesize ul.dropdown1 {
+    width: 160px;
+}
+
+.changesize2 ul.dropdown {
+    width: 160px;
+}
+
+/*Kontakt Button*/
+
+.cta {
+    position: relative;
+    right: 50px;
+}
+
+/*Generalne Butone*/
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(5, 175, 217);
+}
+/*Main*/
+
+main {
+    display: flexbox;
+    width: 1200px;
+    height: fit-content;
+    position: relative;
+    left: 155px;
+}
+
+.container-kabineti {
+    display: flexbox;
+    width: 100%;
+    height: fit-content;
+    border: 1px black solid;
+    margin-top: 20px;
+    background-color: whitesmoke;
+}
+
+/*Prvi Kabinet*/
+
+.prvi-kabinet {
+    display: flexbox;
+}
+
+.title-prvi-kabinet {
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.title-prvi-kabinet h1 {
+    position: relative;
+    left: 37%;
+}
+
+.slike-prvi-kabinet {
+    width: 100%;
+    height: 200px;
+    position: flexbox;
+}
+
+/*Drugi Kabinet*/
+/*Treci Kabinet*/
