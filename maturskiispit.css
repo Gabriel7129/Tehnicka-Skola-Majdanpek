@@ -151,4 +151,62 @@ main {
     height: fit-content;
     position: relative;
     left: 155px;
+    background-color: whitesmoke;
+    top: 50px;
+}
+
+.container {
+    display: flexbox;
+    width: 100%;
+    height: fit-content;
+}
+
+.elektrotehnicar {
+    width: 100%;
+    height: auto;
+    display: flexbox;
+}
+
+.title-elektrotehnicar-file {
+    border: 1px black solid;
+}
+
+.title-elektrotehnicar-file h1 {
+    position: relative;
+    left: 20%;
+}
+
+.main-elektrotehnicar-file {
+    display: inline-flex;
+    border: 1px red solid;
+    width: 100%;
+}
+
+.main-elektrotehnicar-file p {
+    font-size: 20px;
+    margin-left: 27%;
+}
+
+.main-elektrotehnicar-file button {
+    margin-left: 50px;
+}
+
+.CNC {
+    width: 100%;
+    height: auto;
+    display: flexbox;
+    margin-top: 200px;
+}
+
+.title-cnc-file {
+
+}
+
+.title-cnc-file h1 {
+    position: relative;
+    left: 20%;
+}
+
+.main-cnc-file {
+    display: inline-flex;
 }
