@@ -10,10 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
-
+   <link href="./script.js" rel="script">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+
     <title>Техничка Школа Мајданпек</title>
 </head>
 <body>
@@ -99,13 +100,20 @@
         <a class="cta" href="./kontakt.html"><button>Контакт</button></a>
     </header>
     <main>
-        <div class="containerslideshow">
-            <div class="wrapper">
-                <img src="./Images/Img 3.jpg" alt="" class="slideshow1">
-                <img src="./Images/Img 4.jpg" alt="" class="slideshow2">
-                <img src="./Images/Skola Prin Plan.jpg" alt="" class="slideshow3">
-            </div>
-        </div>
+       <section class="container">
+          <div class="slider-wrapper">
+              <div class="slider">
+                <img id="slide-1" src="./Images/Images2/16.jpg" alt="">
+                <img id="slide-2" src="./Images/Images2/34.jpg" alt="">
+                <img id="slide-3" src="./Images/Images2/38.jpg" alt="">
+              </div>
+              <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+              </div>
+          </div>
+       </section>
         <div class="news-container">
             <div class="danskole">
                 <h1>Дан Школе</h1>
@@ -169,11 +177,21 @@
             </div>
         </div>
     </main>
-    <footer>
-        <ul class="list-footer">
-            <li><a href=""><i class="fa fa-instagram" style="font-size:36px ; color: white;"></i></a></li>
-            <li></li>
-        </ul>
-    </footer>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="social-media-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <nav class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      </footer>
 </body>
 </html>
