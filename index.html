@@ -14,10 +14,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script>
+        var slideIndex = 0;
+ showSlides();
 
+ function showSlides() {
+   var i;
+   var slides = document.getElementsByClassName("carousel-slide");
+   
+   // Hide all slides
+   for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";
+   }
+   
+   // Increment slide index
+   slideIndex++;
+   
+   // Wrap back to the first slide
+   if (slideIndex > slides.length) {
+     slideIndex = 1;
+   }
+   
+   // Display the current slide
+   slides[slideIndex - 1].style.display = "block";
+   
+   // Set the timeout for the next slide
+   setTimeout(showSlides, 2000); // Change slide every 2 seconds
+ }
+ </script>
     <title>Техничка Школа Мајданпек</title>
 </head>
 <body>
+
     <header>
         <img class="logo" src="./Images/Tehnička škola Majdanpek.webp" alt="logo">
         <nav>
@@ -87,7 +115,7 @@
                     <!--Cetvrti Dropdown-->
                     <li class="changesize2"><a href="">Колектив <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown">
-                            <li><a href="">Директор</a></li>
+                            <li><a href="./profesori.html">Директор</a></li>
                             <li><a href="">Наставници</a></li>
                             <li><a href="">Администрација и Рачуноводство</a></li>
                             <li><a href="">Стручни Сарадник</a></li>
@@ -100,20 +128,23 @@
         <a class="cta" href="./kontakt.html"><button>Контакт</button></a>
     </header>
     <main>
-       <section class="container">
-          <div class="slider-wrapper">
-              <div class="slider">
-                <img id="slide-1" src="./Images/Images2/16.jpg" alt="">
-                <img id="slide-2" src="./Images/Images2/34.jpg" alt="">
-                <img id="slide-3" src="./Images/Images2/38.jpg" alt="">
-              </div>
-              <div class="slider-nav">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
-              </div>
+       <div class="container">
+        <div class="carousel">
+            <div class="carousel-slide">
+              <img src="./Nove Slike 25.05/16.jpg" alt="Image 1">
+            </div>
+            <div class="carousel-slide">
+              <img src="./Nove Slike 25.05/38.jpg" alt="Image 2">
+            </div>
+            <div class="carousel-slide">
+              <img src="./Nove Slike 25.05/7.jpg" alt="Image 3">
+            </div>
+            
+            <!-- Navigation buttons -->
+            <div class="carousel-control left">&#10094;</div>
+            <div class="carousel-control right">&#10095;</div>
           </div>
-       </section>
+       </div>
         <div class="news-container">
             <div class="danskole">
                 <h1>Дан Школе</h1>
@@ -181,15 +212,15 @@
         <div class="footer-content">
           <div class="social-media-icons">
             <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            
             <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+           
           </div>
           <nav class="footer-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <a href="#">Локације Школе</a>
+            <a href="#">Документи</a>
+            <a href="#">Контакт Девелопер</a>
+            <a href="#">Контакт Школе</a>
           </nav>
         </div>
       </footer>

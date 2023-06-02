@@ -157,33 +157,100 @@ main {
     display: flexbox;
     width: 100%;
     height: fit-content;
-    border: 1px black solid;
     margin-top: 20px;
     background-color: whitesmoke;
 }
 
+/*General Settings*/
+
+.video {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 300px;
+    margin: 10px;
+}
+
+
 /*Prvi Kabinet*/
 
-.prvi-kabinet {
-    display: flexbox;
-}
 
-.title-prvi-kabinet {
-    width: 100%;
-    height: 50px;
+.container-kabineti-elektro h1{
     position: relative;
+    left: 30%;
+    font-size: 35px;
+    margin-bottom: 30px;
 }
 
-.title-prvi-kabinet h1 {
-    position: relative;
-    left: 37%;
-}
-
-.slike-prvi-kabinet {
-    width: 100%;
-    height: 200px;
-    position: flexbox;
-}
 
 /*Drugi Kabinet*/
+
+.container-kabineti-masinci {
+    border-top: 20px white solid;
+}
+
+.container-kabineti-masinci h1 {
+    position: relative;
+    left: 40%;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
 /*Treci Kabinet*/
+
+.container-kabineti-masinci2 {
+    border-top: 20px white solid;
+}
+
+.container-kabineti-masinci2 h1 {
+    position: relative;
+    left: 30%;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+/*Footer*/
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: 500px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-media-icons {
+    margin-bottom: 20px;
+  }
+  
+  .social-media-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }

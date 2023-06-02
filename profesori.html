@@ -6,90 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+   <link href="./script.js" rel="script">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./profesori.css">
+    <script>
+        var slideIndex = 0;
+ showSlides();
+
+ function showSlides() {
+   var i;
+   var slides = document.getElementsByClassName("carousel-slide");
+   
+   // Hide all slides
+   for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";
+   }
+   
+   // Increment slide index
+   slideIndex++;
+   
+   // Wrap back to the first slide
+   if (slideIndex > slides.length) {
+     slideIndex = 1;
+   }
+   
+   // Display the current slide
+   slides[slideIndex - 1].style.display = "block";
+   
+   // Set the timeout for the next slide
+   setTimeout(showSlides, 2000); // Change slide every 2 seconds
+ }
+ </script>
     <title>Техничка Школа Мајданпек</title>
 </head>
 <body>
+
     <header>
         <img class="logo" src="./Images/Tehnička škola Majdanpek.webp" alt="logo">
         <nav>
             <ul class="nav__links">
                 <div class="prvired">
-                    <li class="active"><a href="">Почетна Страна</a></li>
+                    <li class="active"><a href="./index.html">Почетна Страна</a></li>
+                    <!--Prvi Droplist-->
                     <li class="oskoli"><a href="">О школи <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown">
-                            <li><a href="#">Историјерат Жколе</a></li>
-                            <li><a href="#">Ритам рада (Распоред Звонјенја)</a></li>
+                            <li class="changesize"><a href="#">Oбразовни Профили <i class="fas fa-caret-right"></i> </a>
+                              <ul class="dropdown1">
+                                <li><a href="">Машински техничар за компјутерско управљање CNC Машина</a></li>
+                                <li><a href="">Машински техничар моторних возила</a></li>
+                                <li><a href="">Електротехничар Информационих технологија</a></li>
+                                <li><a href="">Руковалац механизацијом и површинској експоатацији</a></li>
+                                <li><a href="">Царински техничар</a></li>
+                                <li><a href="">Туристички техничар</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">Галерија <i class="fas fa-caret-right"></i></a>
+                              <ul class="dropdown1">
+                                <li><a href="">Школа</a></li>
+                                <li><a href="./kabineti.html">Кабинети</a></li>
+                                <li><a href="">Видео Галерија</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">Историјат Школе</a></li>
+                            <li><a href="#">Ритам рада (Распоред Звоњења)</a></li>
                             <li><a href="#">Библиотека</a></li>
                             <li><a href="#">Простор и Опрема</a></li>
-                            <li><a href="#">Жколски Календар</a></li>
-                            <li><a href="#">Распоред Часова</a></li>
+                            <li><a href="#">Школски Календар</a></li>
                         </ul>
                     </li>
+                    <!--Drugi Droplist-->
                     <li><a href="#">Ученици <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown">
-                            <li><a href="#">Редови <i class="fas fa-caret-right"></i></a>
+                            <li><a href="#">Редовни <i class="fas fa-caret-right"></i></a>
                             <ul class="dropdown1">
-                                <li><a href="#">Матурски Испит</a></li>
+                                <li><a href="./maturskiispit.html">Матурски Испит</a></li>
                                 <li><a href="#">Завршни Испит</a></li>
-                                <li><a href="#">Распоред Писанихц Провера</a></li>
+                                <li><a href="#">Распоред Писаних Провера</a></li>
+                                <li><a href="#">Распоред Блок наставе</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Вауредји <i class="fas fa-caret-right"></i></a>
+                        <li><a href="#">Ванредни <i class="fas fa-caret-right"></i></a>
                             <ul class="dropdown1">
-                                <li><a href="#">Распоред Полиција</a></li>
+                                <li><a href="#">Распоред Полагања</a></li>
                                 <li><a href="#">Испита</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Upis</a></li>
+                        <li><a href="#">Упис</a></li>
                         </ul>
                     </li>
-                </div>
-                <div class="drugired">
-                    <li><a href="">Колектив <i class="fas fa-caret-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="">Директор</a></li>
-                            <li><a href="">Наставници</a></li>
-                            <li><a href="">Администрација и Раћуноводство</a></li>
-                            <li><a href="">Струћни сарадник</a></li>
-                            <li><a href="">Техничко особлје</a></li>
-                            <li><a href="">Обике наставника</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Образовни Профили <i class="fas fa-caret-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="">Машински техничар за компјитерско управлјанје СИС Машина</a></li>
-                            <li><a href="">Машински техничар моторних возила</a></li>
-                            <li><a href="">Електротехничар информатичних технологија</a></li>
-                            <li><a href="">Руковалац механизацијом и површинској експлоатацији</a></li>
-                            <li><a href="">Царински техничар</a></li>
-                            <li><a href="">Туристички техничар</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Галерија <i class="fas fa-caret-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="./profesori.html">Школа</a></li>
-                            <li><a href="">Кабинети</a></li>
-                            <li><a href="">Видео Галерија</a></li>
-                        </ul>
-                    </li>
-                </div>
-                <div class="trecired">
-                    <li><a href="">Вести</a></li>
+                    <!--Treci Dropdown-->
                     <li><a href="">Документа <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown">
-                            <li><a href="">Општиакти школе</a></li>
+                            <li><a href="#">Јавне Набавке <i class="fas fa-caret-right"></i></a>
+                                <ul class="dropdown1">
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Општи акти Школе</a></li>
                             <li><a href="">Материјал за наставнике</a></li>
+                            <li><a href="">Правилници</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Јавне Набавке</a></li>
+                    <!--Cetvrti Dropdown-->
+                    <li class="changesize2"><a href="">Колектив <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="./profesori.html">Директор</a></li>
+                            <li><a href="">Наставници</a></li>
+                            <li><a href="">Администрација и Рачуноводство</a></li>
+                            <li><a href="">Стручни Сарадник</a></li>
+                            <li><a href="">Техничко Особље</a></li>
+                        </ul>
+                    </li>
                 </div>
             </ul>
         </nav>
         <a class="cta" href="./kontakt.html"><button>Контакт</button></a>
-    </header>
     </header>
     <main>
         <!--Administracija-->
@@ -222,9 +258,110 @@
                 </tr>
             </tbody>
         </table>
+        <section>
+            <div class="teacher-container">
+                <div class="teacher-card">
+                  <div class="teacher-photo" style="background-image: url('teacher1.jpg')"></div>
+                  <div class="teacher-info">
+                    <div class="teacher-name">Profesor Jedan</div>
+                    <div class="teacher-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar elit vitae lacus pretium ultrices.</div>
+                  </div>
+                </div>
+                <div class="teacher-card">
+                  <div class="teacher-photo" style="background-image: url('teacher2.jpg')"></div>
+                  <div class="teacher-info">
+                    <div class="teacher-name">Profesor 2</div>
+                    <div class="teacher-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar elit vitae lacus pretium ultrices.</div>
+                  </div>
+                </div>
+                <div class="teacher-card">
+                  <div class="teacher-photo" style="background-image: url('teacher3.jpg')"></div>
+                  <div class="teacher-info">
+                    <div class="teacher-name">Profesor 3</div>
+                    <div class="teacher-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar elit vitae lacus pretium ultrices.</div>
+                  </div>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-photo" style="background-image: url('teacher1.jpg')"></div>
+                    <div class="teacher-info">
+                      <div class="teacher-name">Profesor Jedan</div>
+                      <div class="teacher-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar elit vitae lacus pretium ultrices.</div>
+                    </div>
+                  </div>
+                  <div class="teacher-card">
+                    <div class="teacher-photo" style="background-image: url('teacher2.jpg')"></div>
+                    <div class="teacher-info">
+                      <div class="teacher-name">Profesor 2</div>
+                      <div class="teacher-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar elit vitae lacus pretium ultrices.</div>
+                    </div>
+                  </div>
+                  <div class="teacher-card">
+                    <div class="teacher-photo" style="background-image: url('teacher3.jpg')"></div>
+                    <div class="teacher-info">
+                      <div class="teacher-name">Profesor 3</div>
+                      <div class="teacher-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar elit vitae lacus pretium ultrices.</div>
+                    </div>
+                  </div>
+                  <div class="teacher-card">
+                    <div class="teacher-photo" style="background-image: url('teacher1.jpg')"></div>
+                    <div class="teacher-info">
+                      <div class="teacher-name">Profesor Jedan</div>
+                      <div class="teacher-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar elit vitae lacus pretium ultrices.</div>
+                    </div>
+                  </div>
+                  <div class="teacher-card">
+                    <div class="teacher-photo" style="background-image: url('teacher2.jpg')"></div>
+                    <div class="teacher-info">
+                      <div class="teacher-name">Profesor 2</div>
+                      <div class="teacher-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar elit vitae lacus pretium ultrices.</div>
+                    </div>
+                  </div>
+                  <div class="teacher-card">
+                    <div class="teacher-photo" style="background-image: url('teacher3.jpg')"></div>
+                    <div class="teacher-info">
+                      <div class="teacher-name">Profesor 3</div>
+                      <div class="teacher-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar elit vitae lacus pretium ultrices.</div>
+                    </div>
+                  </div>
+                  <div class="teacher-card">
+                    <div class="teacher-photo" style="background-image: url('teacher1.jpg')"></div>
+                    <div class="teacher-info">
+                      <div class="teacher-name">Profesor Jedan</div>
+                      <div class="teacher-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar elit vitae lacus pretium ultrices.</div>
+                    </div>
+                  </div>
+                  <div class="teacher-card">
+                    <div class="teacher-photo" style="background-image: url('teacher2.jpg')"></div>
+                    <div class="teacher-info">
+                      <div class="teacher-name">Profesor 2</div>
+                      <div class="teacher-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar elit vitae lacus pretium ultrices.</div>
+                    </div>
+                  </div>
+                  <div class="teacher-card">
+                    <div class="teacher-photo" style="background-image: url('teacher3.jpg')"></div>
+                    <div class="teacher-info">
+                      <div class="teacher-name">Profesor 3</div>
+                      <div class="teacher-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar elit vitae lacus pretium ultrices.</div>
+                    </div>
+                  </div>
+              </div>
+        </section>
     </main>
-    <footer>
-        
-    </footer>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="social-media-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+           
+          </div>
+          <nav class="footer-links">
+            <a href="#">Локације Школе</a>
+            <a href="#">Документи</a>
+            <a href="#">Контакт Девелопер</a>
+            <a href="#">Контакт Школе</a>
+          </nav>
+        </div>
+      </footer>
 </body>
 </html>
