@@ -122,6 +122,13 @@ header {
     width: 160px;
 }
 
+.changesize ul.dropdown {
+    width: 190px;
+}
+
+.chgsize {
+    width: 160px;
+}
 /*Kontakt Button*/
 
 .cta {
