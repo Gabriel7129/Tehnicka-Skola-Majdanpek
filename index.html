@@ -14,40 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <script>
-        var slideIndex = 0;
- showSlides();
-
- function showSlides() {
-   var i;
-   var slides = document.getElementsByClassName("carousel-slide");
-   
-   // Hide all slides
-   for (i = 0; i < slides.length; i++) {
-     slides[i].style.display = "none";
-   }
-   
-   // Increment slide index
-   slideIndex++;
-   
-   // Wrap back to the first slide
-   if (slideIndex > slides.length) {
-     slideIndex = 1;
-   }
-   
-   // Display the current slide
-   slides[slideIndex - 1].style.display = "block";
-   
-   // Set the timeout for the next slide
-   setTimeout(showSlides, 2000); // Change slide every 2 seconds
- }
- </script>
     <title>Техничка Школа Мајданпек</title>
 </head>
 <body>
 
     <header>
-        <img class="logo" src="./Images/Tehnička škola Majdanpek.webp" alt="logo">
+        <img class="logo" src="./GeneralUseImages/Tehnička škola Majdanpek.webp" alt="logo">
         <nav>
             <ul class="nav__links">
                 <div class="prvired">
@@ -65,10 +37,10 @@
                                 <li><a href="">Туристички техничар</a></li>
                               </ul>
                             </li>
-                            <li><a href="./galerija.html">Галерија <i class="fas fa-caret-right"></i></a>
+                            <li><a href="">Галерија <i class="fas fa-caret-right"></i></a>
                               <ul class="dropdown1">
-                                <li><a href="./galerijaskola.html">Школа</a></li>
-                                <li><a href="./kabineti.html">Кабинети</a></li>
+                                <li><a href="./navbar/o-skoli/o.skoli.galerija/Skola/galerijaskola.html">Школа</a></li>
+                                <li><a href="./navbar/o-skoli/o.skoli.galerija/Kabineti/kabineti.html">Кабинети</a></li>
                                 <li><a href="">Видео Галерија</a></li>
                               </ul>
                             </li>
