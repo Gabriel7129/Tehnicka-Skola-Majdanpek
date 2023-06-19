@@ -145,3 +145,28 @@ button:hover {
 }
 
 /*Header*/
+/*Main*/
+
+.container {
+    width: 1200px;
+    display: flex;
+    background-color: whitesmoke;
+    height: fit-content;
+    position: relative;
+    left: 155px;
+    top: 40px;
+}
+
+/*General Images Commands*/
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 300px;
+    margin: 10px;
+}
+
