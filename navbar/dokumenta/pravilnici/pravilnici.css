@@ -105,6 +105,18 @@ header {
     background-color: whitesmoke;
 }
 
+.dropdown2 {
+    display: none;
+}
+
+.nav__links ul.dropdown ul.dropdown1 li:hover .dropdown2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: whitesmoke;
+    width: 170px;
+}
 
 .dropdown li{
     border-top: 3px white solid;
@@ -145,3 +157,66 @@ button:hover {
 }
 
 /*Header*/
+/*Main*/
+
+main {
+    width: 1200px;
+    position: relative;
+    left: 155px;
+    height: fit-content;
+    background-color: whitesmoke;
+    top: 20px;
+}
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+
+  .file-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .file-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .file-list li:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .file-list li .file-title {
+    flex-grow: 1;
+    margin-right: 10px;
+    color: #333;
+  }
+
+  .file-list li .file-download {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .file-list li .file-download:hover {
+    background-color: #45a049;
+  }
