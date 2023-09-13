@@ -207,7 +207,7 @@ main {
   }
 
   .file-list li .file-download {
-    background-color: #4CAF50;
+    background-color: rgba(0, 136, 169, 1);
     color: #fff;
     border: none;
     padding: 8px 15px;
@@ -218,5 +218,42 @@ main {
   }
 
   .file-list li .file-download:hover {
-    background-color: #45a049;
+    background-color: rgb(5, 175, 217);
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: 500px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-media-icons {
+    margin-bottom: 20px;
+  }
+  
+  .social-media-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
   }
