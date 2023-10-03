@@ -209,61 +209,67 @@ button:hover {
     background-color: rgb(245, 242, 242);
 }
 
-.danskole {
+/*prvi artikl*/
+/*Comande cu uz general pentru articole din scoala*/
+
+.e31 {
     width: 600px;
     height: 250px;
 }
 
-.danskole h1{
+.e31 h3{
     position: relative;
-    left: 200px;
+    left: 100px;
     margin-bottom: 10px;
+    top: 5px;
 }
 
-.danskole img {
+.e31 img {
     height: 140px;
     width: 140px;
     float: right;
     position: relative;
     right: 20px;
-    bottom: 120px;
+    bottom: 80px;
 }
 
-.danskole p {
+.e31 p {
     font-size: 22px;
     width: 400px;
     position: relative;
     left: 10px;
+    top: 15px;
 }
 
-.danskole button  {
+.e31 button  {
     position: relative;
     left: 150px;
-    top: 20px;
+    top: 30px;
 }
 
-/*Radovi*/
+/*drugi artikl*/
 
-.masinciprvagodina {
+.M31 {
     width: 600px;
     border-left: 3px white solid;
 }
 
-.masinciprvagodina h1 {
+.M31 h1 {
     position: relative;
-    left: 200px;
+    left: 230px;
 }
 
-.masinciprvagodina p {
+.M31 p {
     font-size: 22px;
     width: 400px;
     position: relative;
     left: 10px;
     float: right;
+    top: 20px;
     margin-top: 20px;
 }
 
-.masinciprvagodina img {
+.M31 img {
     height: 140px;
     width: 140px;
     float: left;
@@ -272,10 +278,10 @@ button:hover {
     left: 20px;
 }
 
-.masinciprvagodina button {
+.M31 button {
     position: relative;
     left: 120px;
-    top: 35px;
+    top: 55px;
 }
 
 /*Esdnevnik*/
