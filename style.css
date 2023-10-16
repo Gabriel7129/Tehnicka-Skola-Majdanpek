@@ -32,6 +32,8 @@ header {
     background-color: whitesmoke;
     border-left: 130px white solid;
     border-right: 130px white solid;
+    position: relative;
+    left: 20px;
 }
 
 .logo {
