@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+   <link href="./script.js" rel="script">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./kontakt.css">
@@ -13,80 +18,85 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="./Images/Tehnička škola Majdanpek.webp" alt="logo">
+        <img class="logo" src="/GeneralUseImages/LOGO Tehničke škole Majdanpek.jpg" alt="logo">
         <nav>
             <ul class="nav__links">
                 <div class="prvired">
-                    <li class="active"><a href="">Почетна Страна</a></li>
+                    <li class="active"><a href="./index.html">Почетна Страна</a></li>
+                    <!--Prvi Droplist-->
                     <li class="oskoli"><a href="">О школи <i class="fas fa-caret-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="#">Историјерат Жколе</a></li>
-                            <li><a href="#">Ритам рада (Распоред Звонјенја)</a></li>
+                        <ul class="dropdown changesize">
+                            <li class="changesize"><a href="#">Oбразовни Профили <i class="fas fa-caret-right"></i> </a>
+                              <ul class="dropdown1">
+                                <li><a href="/fajlove/Машински техничар за компјутерско управљање  CNC машине.docx">Машински техничар за компјутерско управљање CNC Машина</a></li>
+                                <li><a href="/fajlove/Машински техничар моторна возила- опште образовни и стручни предмети.docx">Машински техничар моторних возила</a></li>
+                                <li><a href="/fajlove/Наставни план -општеобразовни предмети -Електротехничар информационих технологија.docx">Електротехничар Информационих технологија</a></li>
+                                <li><a href="#">Scrie Aici</a></li>
+                                <li><a href="/fajlove/Царински техничар - опште образовни и стручни предмети.docx">Царински техничар</a></li>
+                                <li><a href="/fajlove/Наставни план - Туристички техничар- стручни предмети.docx">Туристички техничар</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="">Галерија <i class="fas fa-caret-right"></i></a>
+                              <ul class="dropdown1">
+                                <li><a href="./navbar/o-skoli/o.skoli.galerija/Skola/galerijaskola.html">Школа</a></li>
+                                <li><a href="./navbar/o-skoli/o.skoli.galerija/Kabineti/kabineti.html">Кабинети</a></li>
+                                <li><a href="./navbar/o-skoli/o.skoli.galerija/Video-Galerija/videogalerija.html">Видео Галерија</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="/fajlove/ИСТОРИЈАТ ШКОЛЕ.docx">Историјат Школе</a></li>
+                            <li><a href="/fajlove/Ритам радног дана и распоред звона у школи.docx">Ритам рада (Распоред Звоњења)</a></li>
+                            <li><a href="/fajlove/Динамика школске године - класификациони периоди 2022-2023..docx">Класификациони Периоди</a></li>
                             <li><a href="#">Библиотека</a></li>
                             <li><a href="#">Простор и Опрема</a></li>
-                            <li><a href="#">Жколски Календар</a></li>
-                            <li><a href="#">Распоред Часова</a></li>
+                            <li><a href="/fajlove/Школски календар.docx">Школски Календар</a></li>
                         </ul>
                     </li>
+                    <!--Drugi Droplist-->
                     <li><a href="#">Ученици <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown">
-                            <li><a href="#">Редови <i class="fas fa-caret-right"></i></a>
+                            <li><a href="#">Редовни <i class="fas fa-caret-right"></i></a>
                             <ul class="dropdown1">
-                                <li><a href="#">Матурски Испит</a></li>
+                                <li><a href="">Матурски Испит <i class="fas fa-caret-right"></i></a>
+                                  <ul class="dropdown2">
+                                    <li><a href="./Elektrotehnicar informacionih tehnologija - ogled.pdf" download>Електротехничар Информационих технологија</a></li>
+                                    <li><a href="./Tehnicar-za-kompjutersko-upravljanje-CNC-masina-MI-Prirucnik-2023.pdf" download>Машински техничар за компјутерско управљање CNC Машина</a></li>
+                                    <li><a href="./Turisticki tehnicar MI.pdf">Туристички техничар</a></li>
+                                  </ul>
+                                </li>
                                 <li><a href="#">Завршни Испит</a></li>
-                                <li><a href="#">Распоред Писанихц Провера</a></li>
+                                <li><a href="#">Распоред Писаних Провера</a></li>
+                                <li><a href="#">Распоред Блок наставе</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Вауредји <i class="fas fa-caret-right"></i></a>
+                        <li><a href="#">Ванредни <i class="fas fa-caret-right"></i></a>
                             <ul class="dropdown1">
-                                <li><a href="#">Распоред Полиција</a></li>
-                                <li><a href="#">Испита</a></li>
+                                <li><a href="/Испитни рoкoви зa вaнрeднe учeникe у школској 2022-23.docx">Распоред Полагања испита</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Upis</a></li>
+                        <li><a href="#">Упис</a></li>
                         </ul>
                     </li>
-                </div>
-                <div class="drugired">
-                    <li><a href="">Колектив <i class="fas fa-caret-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="">Директор</a></li>
-                            <li><a href="">Наставници</a></li>
-                            <li><a href="">Администрација и Раћуноводство</a></li>
-                            <li><a href="">Струћни сарадник</a></li>
-                            <li><a href="">Техничко особлје</a></li>
-                            <li><a href="">Обике наставника</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Образовни Профили <i class="fas fa-caret-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="">Машински техничар за компјитерско управлјанје СИС Машина</a></li>
-                            <li><a href="">Машински техничар моторних возила</a></li>
-                            <li><a href="">Електротехничар информатичних технологија</a></li>
-                            <li><a href="">Руковалац механизацијом и површинској експлоатацији</a></li>
-                            <li><a href="">Царински техничар</a></li>
-                            <li><a href="">Туристички техничар</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Галерија <i class="fas fa-caret-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="">Школа</a></li>
-                            <li><a href="">Кабинети</a></li>
-                            <li><a href="">Видео Галерија</a></li>
-                        </ul>
-                    </li>
-                </div>
-                <div class="trecired">
-                    <li><a href="">Вести</a></li>
+                    <!--Treci Dropdown-->
                     <li><a href="">Документа <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown">
-                            <li><a href="">Општиакти школе</a></li>
+                            <li><a href="#">Јавне Набавке</a>
+                            </li>
+                            <li><a href="/navbar/dokumenta/ostale.html">Остала Документа</a></li>
+                            <li><a href="">Општи акти Школе</a></li>
                             <li><a href="">Материјал за наставнике</a></li>
+                            <li><a href="navbar/dokumenta/pravilnici/pravilnici.html">Правилници</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Јавне Набавке</a></li>
+                    <!--Cetvrti Dropdown-->
+                  <li class="changesize2"><a href="/navbar/Kolektiv/profesori.html">Колектив</li>
+                    </li>
                 </div>
             </ul>
         </nav>
-        <a class="cta" href="#"><button>Контакт</button></a>
+        <a class="cta" href="./kontakt.html"><button>Контакт</button></a>
     </header>
+    <div class="container">
+        <h2>Техничка Школа Мајданпек</h2>
+        <p><strong>Телефон:</strong> 030/581408</p>
+        <p><strong>Имејл:</strong> mpektehnickaskola@gmail.com</p>
+        <p><strong>Локација Школе:</strong> <a href="https://www.google.com/maps/place/Tehni%C4%8Dka+%C5%A0kola+Majdanpek/@44.4267034,21.9442535,17.08z/data=!4m6!3m5!1s0x475168c562fa46c9:0xc1bacd57283a4345!8m2!3d44.4281543!4d21.9447496!16s%2Fg%2F11rpd9r8p2?entry=ttu"><button>Претисните овде</button></a></p>

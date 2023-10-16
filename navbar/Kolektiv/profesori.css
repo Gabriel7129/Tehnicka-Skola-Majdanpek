@@ -36,8 +36,8 @@ header {
 
 .logo {
     cursor: pointer;
-    width: 175px;
-    height: 75px;
+    width: 200px;
+    height: 80px;
     position: relative;
     right: 100px;
 }
@@ -46,6 +46,8 @@ header {
     list-style: none;
     position: relative;
     display: flex;
+    width: 800px;
+    left: 15px;
 }
 
 
@@ -103,11 +105,51 @@ header {
     background-color: whitesmoke;
 }
 
+.dropdown2 {
+    display: none;
+}
+
+.nav__links ul.dropdown ul.dropdown1 li:hover .dropdown2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: whitesmoke;
+    width: 170px;
+}
+
+.dropdown li{
+    border-top: 3px white solid;
+}
+
+.dropdown1 li {
+    border-top: 3px white solid;
+}
+
+.changesize ul.dropdown1 {
+    width: 160px;
+}
+
+.changesize {
+    width: 170px;
+}
+
+.changesize2 ul.dropdown {
+    width: 160px;
+}
+
+.changesize ul.dropdown {
+    width: 190px;
+}
+
+.chgsize {
+    width: 160px;
+}
 /*Kontakt Button*/
 
 .cta {
     position: relative;
-    left: 100px;
+    left: 15px;
 }
 
 /*Generalne Butone*/
@@ -198,6 +240,7 @@ tr, td, th {
   .teacher-bio {
     font-size: 14px;
   }
+/*Footer*/
 .footer {
     background-color: #333;
     color: #fff;
@@ -234,3 +277,6 @@ tr, td, th {
   .footer-links a:hover {
     text-decoration: underline;
   }
+
+
+  

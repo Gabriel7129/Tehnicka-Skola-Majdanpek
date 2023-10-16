@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
 
 
 li, a, button {
@@ -16,6 +18,10 @@ li, a, button {
     text-decoration: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /*Header*/
 
 header {
@@ -23,15 +29,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    background-color: #ffffff;
+    background-color: whitesmoke;
     border-left: 130px white solid;
-    border-right: 80px white solid;
+    border-right: 130px white solid;
 }
 
 .logo {
     cursor: pointer;
-    width: 175px;
-    height: 75px;
+    width: 200px;
+    height: 80px;
     position: relative;
     right: 100px;
 }
@@ -39,8 +45,12 @@ header {
 .nav__links {
     list-style: none;
     position: relative;
-    right: 50px;
+    display: flex;
+    width: 800px;
+    left: 15px;
 }
+
+
 
 .nav__links li {
     display: inline-block;
@@ -54,6 +64,95 @@ header {
 .nav__links li a:hover{
     color: #019cc3;
 }
+
+.prvired {
+    height: 100%;
+}
+
+.active a{
+    color:rgb(5, 175, 217) !important
+}
+
+/*Droplist*/
+
+.nav__links li ul.dropdown li {
+    display: block;
+    width: 150px;
+    padding: 10px;
+}
+
+.nav__links li ul.dropdown {
+    border: 3px white solid;
+    background-color: whitesmoke;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.nav__links li:hover ul.dropdown {
+    display: block;
+}
+
+.dropdown1 {
+    display: none;
+}
+    
+.nav__links ul li:hover .dropdown1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: whitesmoke;
+}
+
+.dropdown2 {
+    display: none;
+}
+
+.nav__links ul.dropdown ul.dropdown1 li:hover .dropdown2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: whitesmoke;
+    width: 170px;
+}
+
+.dropdown li{
+    border-top: 3px white solid;
+}
+
+.dropdown1 li {
+    border-top: 3px white solid;
+}
+
+.changesize ul.dropdown1 {
+    width: 160px;
+}
+
+.changesize {
+    width: 170px;
+}
+
+.changesize2 ul.dropdown {
+    width: 160px;
+}
+
+.changesize ul.dropdown {
+    width: 190px;
+}
+
+.chgsize {
+    width: 160px;
+}
+/*Kontakt Button*/
+
+.cta {
+    position: relative;
+    left: 15px;
+}
+
+/*Generalne Butone*/
 
 button {
     padding: 9px 25px;

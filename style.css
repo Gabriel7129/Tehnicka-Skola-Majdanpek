@@ -32,12 +32,14 @@ header {
     background-color: whitesmoke;
     border-left: 130px white solid;
     border-right: 130px white solid;
+    position: relative;
+    left: 20px;
 }
 
 .logo {
     cursor: pointer;
-    width: 175px;
-    height: 75px;
+    width: 200px;
+    height: 80px;
     position: relative;
     right: 100px;
 }
@@ -47,7 +49,7 @@ header {
     position: relative;
     display: flex;
     width: 800px;
-    right: 30px;
+    left: 15px;
 }
 
 
@@ -130,6 +132,10 @@ header {
     width: 160px;
 }
 
+.changesize {
+    width: 170px;
+}
+
 .changesize2 ul.dropdown {
     width: 160px;
 }
@@ -145,7 +151,7 @@ header {
 
 .cta {
     position: relative;
-    right: 50px;
+    left: 15px;
 }
 
 /*Generalne Butone*/
@@ -205,61 +211,67 @@ button:hover {
     background-color: rgb(245, 242, 242);
 }
 
-.danskole {
+/*prvi artikl*/
+/*Comande cu uz general pentru articole din scoala*/
+
+.e31 {
     width: 600px;
     height: 250px;
 }
 
-.danskole h1{
+.e31 h3{
     position: relative;
-    left: 200px;
+    left: 100px;
     margin-bottom: 10px;
+    top: 5px;
 }
 
-.danskole img {
+.e31 img {
     height: 140px;
     width: 140px;
     float: right;
     position: relative;
     right: 20px;
-    bottom: 120px;
+    bottom: 80px;
 }
 
-.danskole p {
+.e31 p {
     font-size: 22px;
     width: 400px;
     position: relative;
     left: 10px;
+    top: 15px;
 }
 
-.danskole button  {
+.e31 button  {
     position: relative;
     left: 150px;
-    top: 20px;
+    top: 30px;
 }
 
-/*Radovi*/
+/*drugi artikl*/
 
-.masinciprvagodina {
+.M31 {
     width: 600px;
     border-left: 3px white solid;
 }
 
-.masinciprvagodina h1 {
+.M31 h1 {
     position: relative;
-    left: 200px;
+    left: 230px;
 }
 
-.masinciprvagodina p {
+.M31 p {
     font-size: 22px;
     width: 400px;
     position: relative;
     left: 10px;
     float: right;
+    top: 20px;
     margin-top: 20px;
 }
 
-.masinciprvagodina img {
+.M31 img {
     height: 140px;
     width: 140px;
     float: left;
@@ -268,11 +280,62 @@ button:hover {
     left: 20px;
 }
 
-.masinciprvagodina button {
+.M31 button {
     position: relative;
     left: 120px;
-    top: 35px;
+    top: 55px;
 }
+
+/*Esdnevnik*/
+
+.esdnevnik {
+    height: 300px;
+    width: 1200px;
+    position: relative;
+    left: 155px;
+    display: flexbox;
+    background-color: whitesmoke;
+    border-top: 5px white solid;
+}
+
+.esdnevnik-text {
+    height: 300px;
+    width: 1200px;
+}
+
+.esdnevnik-text .title {
+    position: relative;
+    left: 170px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.esdnevnik-text .text {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    left: 60px;
+    top: 60px;
+}
+
+.esdnevnik .button {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 6;
+    bottom: 100px;
+    left: 200px;
+}
+
+.esdnevnik .img img {
+    width: 350px;
+    height: 250px;
+    z-index: 6;
+    position: relative;
+    left: 700px;
+    bottom: 480px;
+}
+
 
 /*Sportovi*/
 
@@ -547,3 +610,6 @@ height: 140px;
   .footer-links a:hover {
     text-decoration: underline;
   }
+
+
+  
