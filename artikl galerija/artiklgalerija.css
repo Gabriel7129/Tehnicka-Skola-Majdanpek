@@ -149,7 +149,6 @@ header {
 
 .cta {
     position: relative;
-    left: 15px;
 }
 
 /*Generalne Butone*/
@@ -167,8 +166,16 @@ button:hover {
     background-color: rgb(5, 175, 217);
 }
 
-/*Header*/
 /*Main*/
+
+main {
+    background-color: whitesmoke;
+    width: 1200px;
+    position: relative;
+    left: 155px;
+    height: fit-content;
+    border-top: white 10px solid;
+}
 
 .container {
     width: 1200px;
@@ -176,8 +183,13 @@ button:hover {
     background-color: whitesmoke;
     height: fit-content;
     position: relative;
-    left: 15px;
+    left: 155px;
     top: 40px;
+}
+
+.artikle31 {
+    position: relative;
+    left: 30%;
 }
 
 /*General Images Commands*/
@@ -193,3 +205,40 @@ button:hover {
     margin: 10px;
 }
 
+/*Footer*/
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: 600px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-media-icons {
+    margin-bottom: 20px;
+  }
+  
+  .social-media-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
